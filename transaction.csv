@@ -1,0 +1,6 @@
+transaction_id;client_id;total_amount;discount_percentage
+1;3545;3000;6.99
+2;3545;4500;0.45
+3;3509;69998;0
+4;3510;1;null
+5;4510;34;40

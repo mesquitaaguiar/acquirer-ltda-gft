@@ -1,0 +1,4 @@
+Consideramos o ambiente onpremise e a distribuição Cloudera Interprise 6.x, minha opção seria por Spark, realizando o processamento analítico e consultando/gravando os dados consolidados em tabelas Impala em formato Parquet. 
+O Spark além da velocidade no processamento (por trabalhar em memória), é escalável e permite consultar/armazenar com qualquer fonte de dados compatível com Hadoop (Kafka, Impala, Hive, Parquet etc).
+Impala por ter o mecanismo MPP fornece grande desempenho e baixa latência por meios de processos distribuídos, que são bem diferente da abordagem que o Hive propõe por mapreduce, sendo 100x mais rápido que mapreduce. 
+Parquet é uma alternativa sugerida para ganhos em pesquisa random access (acesso aleatório) por armazenar os dados de forma colunar plana, sem contar que a compressão se torna mais eficiente. Tem boa integração com Spark e é o file format indicado pela distribuição mencionada.

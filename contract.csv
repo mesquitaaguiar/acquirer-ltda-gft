@@ -1,0 +1,5 @@
+contract_id;client_id;client_name;percentage;is_active
+3;3545;Magazine Luana;2.00;true
+4;3545;Magazine Luana;1.95;false
+5;3509;Lojas Italianas;1;true
+6;3510;Carrerfive;3.00;true
